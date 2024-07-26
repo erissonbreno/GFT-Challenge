@@ -1,4 +1,4 @@
-package com.br.gft.pages;
+package com.br.gft.web.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;

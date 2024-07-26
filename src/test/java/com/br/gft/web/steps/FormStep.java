@@ -1,6 +1,6 @@
-package com.br.gft.steps;
+package com.br.gft.web.steps;
 
-import com.br.gft.pages.ContactUsPage;
+import com.br.gft.web.pages.ContactUsPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

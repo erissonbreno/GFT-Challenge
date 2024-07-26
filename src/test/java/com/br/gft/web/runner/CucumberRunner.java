@@ -1,4 +1,4 @@
-package com.br.gft.runner;
+package com.br.gft.web.runner;
 
 
 import io.cucumber.junit.Cucumber;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "src/test/java/com/br/gft/steps",
+        glue = "com.br.gft.web.steps",
         plugin = {"pretty", "html:target/cucumber-reports.html"}
 )
 public class CucumberRunner {
