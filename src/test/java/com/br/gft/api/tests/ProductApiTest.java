@@ -29,4 +29,17 @@ public class ProductApiTest {
         assertEquals("Blue Top", jsonResponse.get("products[0].name"));
         assertEquals("Rs. 400", jsonResponse.get("products.find { it.name == 'Men Tshirt' }.price"));
     }
+
+    @Test
+    public void validatePostProducts() {
+        Response response = ProductRequest.postProductsList();
+        JsonPath jsonResponse = response.jsonPath();
+
+        response.then()
+                .log().body()
+                .assertThat()
+                .statusCode(SC_OK);
+
+        assertEquals("This request method is not supported.", jsonResponse.get("message"));
+    }
 }

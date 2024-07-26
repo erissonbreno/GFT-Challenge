@@ -16,4 +16,12 @@ public class ProductRequest {
                 .when()
                 .get(PRODUCTS_LIST);
     }
+
+    public static Response postProductsList() {
+        return given()
+                .log().all()
+                .baseUri(BASE_URL)
+                .when()
+                .post(PRODUCTS_LIST);
+    }
 }
